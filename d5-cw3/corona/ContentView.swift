@@ -9,6 +9,13 @@ import SwiftUI
 
 
 // يجب عمل هيكل وكائنات من الهيكل
+var people = [
+userCovidInfo(fullName: "Abdulwahab Alqallaf", area: "الدسمة", numberOfDoses: 2),
+userCovidInfo(fullName: "Mohammed Ali", area: "الجهراء", numberOfDoses: 3),
+userCovidInfo(fullName: "Abdullah Khaleed ", area: "المنصورية", numberOfDoses: 1)
+
+
+]
 
 
 struct ContentView: View {
@@ -28,33 +35,33 @@ struct ContentView: View {
                 VStack{
         // الحالة الأولى
                 // الاسم
-               Text("")
+                    Text("الاسم: \(people[0].fullName)")
 // المنطقة
-                Text("")
+                Text("المنطقة: \(people[0].area)")
                     // عدد الجرعات
-               Text("")
+               Text("عدد الجرعات: \(people[0].numberOfDoses)")
 
                 Divider()
                 }
                 VStack{
         // الحالة الثانية
                 // الاسم
-               Text("")
+               Text("الاسم: \(people[1].fullName)")
                 // المنطقة
-               Text("")
+               Text("المنطقة: \(people[1].area)")
     // عدد الجرعات
-               Text("")
+               Text("عدد الجرعات: \(people[1].numberOfDoses)")
 
                 Divider()
                 }
                 VStack{
               // الحالة الثالثة
                       // الاسم
-                     Text("")
+                     Text("الاسم: \(people[2].fullName)")
                       // المنطقة
-                     Text("")
+                     Text("المنطقة: \(people[2].area)")
           // عدد الجرعات
-                     Text("")
+                     Text("عدد الجرعات: \(people[2].numberOfDoses)")
                 }
                 Spacer()
                 HStack{
